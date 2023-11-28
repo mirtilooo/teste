@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Secret Santa Generator</title>
+  <style>
+    /* Add your CSS styling here */
+  </style>
+</head>
+<body>
+
+  <h1>Secret Santa Generator</h1>
+
+  <form id="secretSantaForm">
+    <label for="nickname">Your Nickname:</label>
+    <input type="text" id="nickname" required>
+
+    <label for="description">Gift Description:</label>
+    <textarea id="description" required></textarea>
+
+    <button type="button" onclick="submitForm()">Submit</button>
+  </form>
+
+  <script>
+    // JavaScript code for random assignment
+    function submitForm() {
+      const nickname = document.getElementById('nickname').value;
+      const description = document.getElementById('description').value;
+
+      // You would typically send this data to a server for processing
+      // For simplicity, let's just log the data to the console here
+      console.log(`Nickname: ${nickname}, Description: ${description}`);
+    }
+  </script>
+
+</body>
+</html>
